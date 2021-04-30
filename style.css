@@ -76,6 +76,20 @@ h2 {
     color: #000;
     font-size: 2rem;
     position: absolute;
+    top: 24.7rem;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.data {
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
     top: 18.7rem;
     width: 100%;
     text-align: center;
@@ -84,6 +98,10 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+
+.data h5 {
+    font-weight: normal;
 }
 
 
@@ -114,19 +132,6 @@ h2 {
     }
 }
 
-
-/* On smaller screens, decrease text size */
-
-
-/* @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px;
-        opacity: 0;
-    }
-} */
-
 @media only screen and (min-width: 360px) {
     img {
         vertical-align: middle;
@@ -145,10 +150,15 @@ h2 {
 table {
     border: 1px solid #ccc;
     border-collapse: collapse;
-    margin: 0;
     padding: 0;
     width: 100%;
     table-layout: fixed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10;
+    position: relative;
 }
 
 table caption {
@@ -159,8 +169,9 @@ table caption {
 table tr {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
-    padding: .35em;
+    padding: .40em;
     font-weight: normal;
+    font-size: medium;
 }
 
 table th,
@@ -177,7 +188,6 @@ table th {
 @media screen and (max-width: 600px) {
     table {
         border: 0;
-        padding: 2rem;
     }
     table caption {
         font-size: 1em;
@@ -195,11 +205,9 @@ table th {
     table tr {
         border-bottom: 3px solid #ddd;
         display: flex;
-        margin-bottom: .625em;
         font-weight: normal;
         font-size: medium;
         text-align: center;
-        margin: 0.3rem;
     }
     table td {
         border-bottom: 1px solid #ddd;

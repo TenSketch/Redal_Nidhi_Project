@@ -1,51 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href = "style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
 </head>
+
 <body>
-<div class="slideshow-container">
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <a href="#"><img src="images/Logo.png" alt="logo"></a>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s"><a href="#">About Us</a></li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Products<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Savings Account<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Zero Balance</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Regular</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Premium</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Deposit<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Fixed Deposit</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Recurring Deposit</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Daily Deposit</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Loan<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Gold Loan</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Mortgage Loan</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Loan Against Deposit</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Terms & Conditions</a></li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Privacy Policy</a></li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<div class="mySlides fade">
-  <!--<div class="numbertext">1 / 3</div>-->
-  <img src="images/savings.jpg" style="width:100%">
-   <div class="text" style = "color:black">
-    <table>
-  <caption>Savings Account</caption>
-  <tbody>
-      <th>Savings Account</th>
-      <th>Interest rate/annum</th>
-      <th>Minimum Balance</th>
+    <!-- Carousel -->
 
-    <tr>
-      <td>  0 bal  </td>
-      <td> 3%  </td>
-      <td> NA</td>
-    </tr>
 
-    <tr>
-      <td>Regular</td>
-      <td>   4%   </td>
-      <td>  2000  </td>
-    </tr>
+  <div class="mySlides fade">
+    <img src="images/savings.jpg" style="width:100%">
+      <div class="text" style = "color:black">
+        <table>
+          <caption>Savings Account</caption>
+          <tbody>
+            <th>Savings Account</th>
+            <th>Interest rate/annum</th>
+            <th>Minimum Balance</th>
 
-    <tr>
-      <td>Premium</td>
-      <td>   5%   </td>
-      <td> 10000</td>
-    </tr>
-  </tbody>
-</table>
-    </div>
+            <tr>
+              <td> 0 bal </td>
+              <td> 3% </td>
+              <td> NA</td>
+            </tr>
+
+            <tr>
+              <td>Regular</td>
+              <td> 4% </td>
+              <td> 2000 </td>
+            </tr>
+
+            <tr>
+              <td>Premium</td>
+              <td> 5% </td>
+              <td> 10000 </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
   </div>
-</div>
 
-<div class="mySlides fade">
-  <!--<div class="numbertext">2 / 3</div>-->
-  <img src="images/deposit.jpg" style="width:100%">
-  <div class="text">
-    <table>
+  <div class="mySlides fade">
+    <img src="images/deposit.jpg" style="width:100%">
+      <div class="text" style = "color:black">
+        <table>
   <caption>Deposit Account</caption>
   <tbody>
       <th>Deposit Account</th>
@@ -54,53 +141,50 @@
       <th>Minimum Deposit</th>
 
     <tr>
-      <td>  FD  </td>
-      <td> 10.5%  </td>
+      <td> FD </td>
+      <td> 10.5% </td>
       <td> 11.5%</td>
-      <td> 10000</td>
+      <td> 10000 </td>
     </tr>
 
     <tr>
-      <td>RD</td>
-      <td>   10.5%   </td>
-      <td>  11.5%  </td>
-      <td> 1000</td>
+      <td> RD </td>
+      <td> 10.5% </td>
+      <td> 11.5% </td>
+      <td> 1000 </td>
     </tr>
 
     <tr>
-      <td>DD</td>
-      <td>  On progress   </td>
-      <td>   On progress </td>
-      <td> On progress</td>
+      <td> DD </td>
+      <td> On <br> progress </td>
+      <td> On <br> progress </td>
+      <td> On <br> progress </td>
     </tr>
     
   </tbody>
 </table>
+      </div>
   </div>
-</div>
+
 
 <div class="mySlides fade">
-  <!--<div class="numbertext">3 / 3</div>-->
   <img src="images/account.jpg" style="width:100%">
   <div class="data" style = "color:black">
-    <h5>Loan</h5>
-    <h5>Mortage Loan</h5>
-    <h5>Gold Loan</h5>
-    <h5>Loan Against Deposit</h5>
+    <p>Loan</p>
+    <p>Mortage Loan</p>
+    <p>Gold Loan</p>
+    <p>Loan Against Deposit</p>
    
-    </div>
   </div>
+</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-<br>
-<h1>Test</h1>
 
 <script src ="script.js" defer></script>
-
-
 </body>
-</html> 
+
+</html>

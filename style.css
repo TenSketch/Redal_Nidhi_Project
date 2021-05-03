@@ -383,11 +383,11 @@ header {
 }
 
 img {
-    margin-top: 0.2rem;
+    margin-top: 0;
     vertical-align: middle;
     opacity: 60%;
     width: 100%;
-    height: 565px;
+    height: 570px;
 }
 
 h2 {
@@ -403,10 +403,6 @@ h2 {
     margin: auto;
 }
 
-h2 {
-    font-weight: lighter;
-}
-
 
 /* Next & previous buttons */
 
@@ -419,8 +415,8 @@ h2 {
     padding: 16px;
     margin-top: -22px;
     color: black;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: bolder;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -446,20 +442,20 @@ h2 {
 /* Caption text */
 
 .text {
-    color: #000;
+    color: rgb(34, 14, 66);
     font-size: 2rem;
     position: absolute;
     top: 24.7rem;
     width: 100%;
     text-align: center;
     background: transparent;
-    font-weight: bold;
+    font-weight: normal;
     align-items: center;
     justify-content: center;
 }
 
 .data {
-    color: #000;
+    color: rgb(34, 14, 66);
     font-size: 2rem;
     position: absolute;
     top: 23.7rem;
@@ -481,14 +477,14 @@ h2 {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 120s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .8
     }
     to {
         opacity: 1
@@ -559,23 +555,26 @@ table th {
         width: 100%;
         height: auto;
     }
+    .account {
+        height: 274px;
+    }
     .text {
-        color: #000;
-        font-size: 2rem;
+        color: rgb(34, 14, 66);
+        font-size: 1rem;
         position: absolute;
-        top: 18.7rem;
+        top: 12.7rem;
         width: 100%;
         text-align: center;
         background: transparent;
-        font-weight: bold;
+        font-weight: normal;
         align-items: center;
         justify-content: center;
     }
     .data {
-        color: #000;
-        font-size: 2rem;
+        color: rgb(34, 14, 66);
+        font-size: 1rem;
         position: absolute;
-        top: 28.7rem;
+        top: 12.7rem;
         width: 100%;
         text-align: center;
         background: transparent;

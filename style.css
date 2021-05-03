@@ -261,7 +261,7 @@ header {
     .nav-btn {
         position: fixed;
         /* height: calc(100vh - 3rem); */
-        top: 9.4rem;
+        top: 9.3rem;
         height: 100%;
         right: 0;
         width: 50%;

@@ -688,6 +688,7 @@ table th {
     .test-container .test-child {
         width: 100%;
         display: block;
+        overflow: hidden;
     }
     .test-child .customer1 {
         width: 400px;
@@ -702,7 +703,7 @@ table th {
         /* box-shadow: 5px 4px 4px 4px rgba(255, 255, 255, 0.2); */
     }
     .test-child .heading {
-        margin-left: 20px;
+        margin: 10px 10px 10px 5px;
         padding: 0;
         align-items: center;
     }

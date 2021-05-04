@@ -704,6 +704,7 @@ table th {
     }
     .test-child .heading {
         margin-right: 1rem;
+        margin-left: 0.5rem;
         padding: 0;
         align-items: center;
     }

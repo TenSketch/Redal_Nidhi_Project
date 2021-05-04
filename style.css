@@ -684,6 +684,8 @@ table th {
     .test-container {
         display: block;
         font-size: 0.8rem;
+        align-items: center;
+        justify-content: center;
     }
     .test-container .test-child {
         width: 100%;
@@ -703,10 +705,11 @@ table th {
         /* box-shadow: 5px 4px 4px 4px rgba(255, 255, 255, 0.2); */
     }
     .test-child .heading {
-        margin-right: 1rem;
-        margin-left: 0.5rem;
+        margin: 2.5%;
         padding: 0;
-        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        position: relative;
     }
     .test-child .heading h3 {
         background: none;
@@ -715,7 +718,7 @@ table th {
         padding: 10px;
         border-radius: 6px;
         margin-bottom: 10px;
-        width: 280px;
+        width: 50%;
     }
     .test-child .heading p {
         background-color: #e5d9f5;
@@ -723,7 +726,7 @@ table th {
         display: flex;
         padding: 10px;
         border-radius: 6px;
-        width: 280px;
+        width: 50%;
         margin-top: 0;
     }
 }

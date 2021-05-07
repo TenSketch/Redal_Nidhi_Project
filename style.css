@@ -755,8 +755,6 @@
            width: 100%;
            padding: 0;
            height: 200px;
-           align-items: center;
-           justify-content: center;
        }
        .content_block h1 {
            padding-top: 1rem;
@@ -772,18 +770,12 @@
            border-radius: 0;
            height: 220px;
        }
-       .t1 {
-           padding: 1rem;
-           margin-left: 50px;
-       }
        .table_block {
-           width: 20%;
-           margin-top: 0.5rem;
-           margin-bottom: 1rem;
-       }
-       th,
-       td {
-           padding-right: 1rem;
+           width: 100%;
+           margin: auto;
+           padding-left: 2rem;
+           padding-right: 2rem;
+           padding-bottom: 1rem;
        }
        .box_block {
            display: block;

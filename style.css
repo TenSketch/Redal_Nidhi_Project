@@ -387,7 +387,7 @@
        height: 570px;
    }
    
-   h2 {
+   .myslides h2 {
        text-align: center;
        margin: 0;
    }
@@ -507,6 +507,7 @@
        display: block;
        align-items: center;
        justify-content: center;
+       box-shadow: 5px 5px 5px 5px rgb(216, 220, 238);
    }
    
    .savings_block {
@@ -520,7 +521,7 @@
    
    .common_block h1 {
        margin-top: 1rem;
-       margin-bottom: 1rem;
+       margin-bottom: 0.5rem;
    }
    
    .savings_block img {
@@ -536,7 +537,7 @@
    }
    
    .image_block img {
-       width: 500px;
+       width: 600px;
        height: 300px;
        margin-top: 2rem;
        margin-left: 7rem;
@@ -563,11 +564,25 @@
    td {
        text-align: center;
    }
-   /* Mobile View */
    
-   @media only screen and (max-width: 600px) {}
-   /* Products end */
-   /* Testimonials */
+   .loans_block {
+       display: flex;
+   }
+   
+   .loans_block img {
+       width: 500px;
+       height: 300px;
+       margin-top: 2rem;
+       margin-left: 7rem;
+       border-radius: 4px;
+   }
+   
+   .loan_data h2 {
+       font-weight: normal;
+       padding: 0.7rem;
+       margin: 0;
+   }
+   /*Testimonials*/
    
    .test-container {
        justify-content: center;
@@ -585,7 +600,6 @@
    
    .test-container .test-child {
        float: left;
-       padding: 20px;
        border: 2px solid rgb(153, 142, 247);
        background-color: #05063f;
        width: 50%;
@@ -634,6 +648,139 @@
        border-radius: 6px;
        font-size: 0.8rem;
    }
+   /* Privacy Policy begins */
+   
+   #privacypolicy {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   
+   .privacy-title {
+       background: url("images/privacypolicy1.jpg") no-repeat center;
+       background-size: cover;
+       background-attachment: fixed;
+       height: 40vh;
+       /* margin-top: 22rem; */
+   }
+   
+   .privacy-overlay {
+       background: rgba(0, 0, 0, 0.527);
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .privacy-overlay h2 {
+       color: whitesmoke;
+       font-size: 2.3rem;
+   }
+   
+   .privacy-container {
+       width: min(991px, 80%);
+       margin: 0 auto;
+   }
+   
+   .privacy-content {
+       background: rgba(97, 92, 145, 0.247);
+   }
+   
+   .privacy-container {
+       width: min(991px, 80%);
+       margin: 0 auto;
+   }
+   
+   .privacy-container ul {
+       /* background: khaki; */
+       padding: 1rem 0 2rem 0;
+   }
+   
+   .privacy-container ul li {
+       text-align: center;
+   }
+   
+   .privacy-container ul li h2 {
+       padding: 1rem 0;
+       font-size: 1.3rem;
+   }
+   
+   .privacy-container ul li p {
+       text-align: justify;
+       line-height: 1.25rem;
+   }
+   
+   .policy {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .policy img {
+       margin: 0 auto;
+       height: 5em;
+       padding: .5rem;
+       border: 2px solid black;
+       border-top-right-radius: 30%;
+       border-bottom-left-radius: 30%;
+   }
+   
+   @media(min-width: 769px) {
+       .privacy-overlay h2 {
+           font-size: 3rem;
+       }
+   }
+   
+   @media(min-width: 869px) {
+       .privacy-title {
+           background: url("images/privacypolicy.jpg") no-repeat center;
+           background-size: cover;
+           background-attachment: fixed;
+           height: 45vh;
+       }
+       .privacy-overlay h2 {
+           width: 85%;
+           font-size: 4rem;
+           text-align: left;
+           letter-spacing: 1.5px;
+       }
+       .privacy-container ul {
+           /* background: khaki; */
+           padding: 1.5rem 0 2.5rem 0;
+       }
+       .privacy-container ul li {
+           line-height: 1.4rem;
+           letter-spacing: .5px;
+           padding-top: 1.5rem;
+           text-align: left;
+       }
+       .privacy-container ul li h2 {
+           padding: 1.5rem 0;
+           font-size: 1.5rem;
+       }
+       .privacy-container ul li p {
+           text-align: left;
+           line-height: 1.4rem;
+       }
+       .policy {
+           flex-direction: row;
+           align-items: center;
+           /* justify-content: space-between; */
+           width: 85%;
+           margin: 0 auto;
+       }
+       .policy img {
+           height: 10em;
+           padding: 1rem;
+           margin-right: 4rem;
+       }
+       .privacy-container ul li:hover img {
+           transition: 1s ease-in-out;
+           transform: translateX(-30%);
+           border-top-right-radius: 0%;
+           border-bottom-left-radius: 0%;
+           border-top-left-radius: 30%;
+           border-bottom-right-radius: 30%;
+       }
+   }
+   /* Privacy Policy ends */
    /* Mobile View */
    
    @media screen and (max-width: 600px) {
@@ -757,10 +904,10 @@
            height: 200px;
        }
        .content_block h1 {
-           padding-top: 1rem;
+           padding-top: 0.2rem;
            padding-bottom: 0;
            margin-bottom: 0;
-           font-size: 1rem;
+           font-size: 1.5rem;
            text-align: center;
            align-items: center;
            justify-content: center;
@@ -775,7 +922,14 @@
            margin: auto;
            padding-left: 2rem;
            padding-right: 2rem;
-           padding-bottom: 1rem;
+           padding-bottom: 2rem;
+       }
+       table {
+           padding-bottom: 2rem;
+       }
+       th,
+       td {
+           border: 2px solid rgb(163, 118, 236);
        }
        .box_block {
            display: block;
@@ -792,6 +946,31 @@
            width: 100%;
            height: 200px;
            border-radius: 4px;
+       }
+       .loans_block {
+           display: table;
+           width: 100%;
+       }
+       .loans_block .content_block {
+           display: block;
+           display: table-footer-group;
+           font-size: 0.8rem;
+       }
+       .loans_block img {
+           margin-left: 0;
+           margin-bottom: 0;
+           width: 100%;
+           height: 220px;
+           border-radius: 4px;
+       }
+       .loan_data {
+           width: 100%;
+           margin: auto;
+           font-size: 0.8rem;
+           padding-bottom: 0.5rem;
+       }
+       .common {
+           width: 100%;
        }
        /* Products end */
    }

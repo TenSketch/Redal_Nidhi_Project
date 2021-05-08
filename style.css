@@ -659,7 +659,6 @@
        background-size: cover;
        background-attachment: fixed;
        height: 40vh;
-       /* margin-top: 22rem; */
    }
    
    .privacy-overlay {
@@ -781,6 +780,81 @@
        }
    }
    /* Privacy Policy ends */
+   /* ---------------------------------------------- Terms and Conditions Begins --------------------------------------------------- */
+   
+   #tandc {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   
+   .tandc-title {
+       background: url(images/tandc.jpg) no-repeat center;
+       background-size: cover;
+       background-attachment: fixed;
+       height: 30vh;
+   }
+   
+   .tandc-overlay {
+       background-color: rgba(0, 0, 0, 0.596);
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .tandc-overlay h2 {
+       color: whitesmoke;
+       font-size: 2rem;
+   }
+   
+   .tandc-content {
+       background: rgba(97, 92, 145, 0.247);
+   }
+   
+   .tandc-container {
+       width: min(991px, 80%);
+       margin: 0 auto;
+   }
+   
+   .tandc-container ul {
+       /* background: khaki; */
+       padding: 1rem 0 1.5rem 0;
+   }
+   
+   .tandc-container ul li {
+       list-style-type: initial;
+       padding-top: 1rem;
+       text-align: justify;
+       line-height: 1.25rem;
+   }
+   
+   @media(min-width: 769px) {
+       .tandc-overlay h2 {
+           font-size: 3rem;
+       }
+   }
+   
+   @media(min-width: 869px) {
+       .tandc-title {
+           height: 45vh;
+       }
+       .tandc-overlay h2 {
+           width: 85%;
+           font-size: 3.5rem;
+           letter-spacing: 1.5px;
+           text-align: left;
+       }
+       .tandc-container ul {
+           /* background: khaki; */
+           padding: 1.5rem 0 3rem 0;
+       }
+       .tandc-container ul li {
+           line-height: 1.4rem;
+           letter-spacing: .5px;
+           padding-top: 1.5rem;
+           text-align: left;
+       }
+   }
+   /* ---------------------------------------------- Terms and Conditions Ends --------------------------------------------------- */
    /* Mobile View */
    
    @media screen and (max-width: 600px) {

@@ -1042,8 +1042,6 @@ textarea::placeholder {
 .submit {
     width: 50%;
     background: none;
-    padding-bottom: 2.5rem;
-    font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
     height: 33px;
@@ -1065,6 +1063,7 @@ textarea::placeholder {
     background: #c95937;
     color: whitesmoke;
     text-align: center;
+    padding: 0;
 }
 
 @media(min-width: 769px) {
@@ -1150,6 +1149,9 @@ textarea::placeholder {
     .contact-icons2 a:hover {
         transition: .5s;
         color: rgb(57, 20, 220);
+    }
+    .submit {
+        padding-bottom: 0;
     }
 }
 

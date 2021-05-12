@@ -12,6 +12,11 @@ body {
     overflow: auto;
 }
 
+img {
+    width: 100%;
+    height: auto
+}
+
 header {
     position: sticky;
     top: 0px;
@@ -818,9 +823,9 @@ th {
 /*----------------------------------------------------------------Testimonials-----------------------------------*/
 
 .testimonials-title {
-    background: url("images/testimonials.jpeg") no-repeat center;
+    background: url(images/testimonials.jpeg) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 35vh;
     margin-bottom: 1rem;
 }

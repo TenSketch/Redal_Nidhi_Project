@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,13 +8,13 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: auto; */
 }
 
 img {
-    width: 100%;
-    height: auto
+    max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -24,15 +24,46 @@ header {
     width: 100%;
     z-index: 1000;
     margin: 0;
+    /* animation: movedown 1s linear 1;
+    animation-delay: .5s;
+    visibility: hidden;
+    animation-fill-mode: forwards; */
 }
+
+
+/* @keyframes movedown{
+    0%{
+        transform: translateY(-35%);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+} */
 
 .logo-container img {
     height: 150px;
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+    0% {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
 }
 
 .container {
-    max-width: 65rem;
-    padding: 0 2rem;
+    width: min(1080px, 80%);
+    /* padding: 0 2rem; */
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -44,13 +75,48 @@ header {
     align-items: center;
 }
 
+.login {
+    margin-top: 3.4rem;
+    cursor: pointer;
+}
+
+.login h2 {
+    font-size: 1.2rem;
+    width: 190px;
+    color: #3a91bd;
+    border: 1px solid #3a91bd;
+    border-radius: 10px;
+    padding: .2rem;
+    text-align: center;
+    animation: moveleft 1s linear 1;
+    animation-delay: .5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translateX(30%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.login h2:hover {
+    color: white;
+    background: #3a91bd;
+}
+
 .nav-btn {
     flex: 3;
     display: flex;
 }
 
 .nav-btn .nav-links ul {
-    margin-top: 50px;
+    margin-top: 3.3rem;
 }
 
 .nav-btn .nav-links ul li ul {
@@ -59,7 +125,23 @@ header {
 
 .nav-links {
     flex: 2;
+    /* animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards; */
 }
+
+
+/* @keyframes movedown{
+    0%{
+        transform: translateY(-20%);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+} */
 
 .nav-links>ul {
     display: flex;
@@ -74,17 +156,17 @@ header {
 .nav-link>a {
     line-height: 3rem;
     color: #fff;
-    padding: 0 0.8rem;
-    letter-spacing: 1px;
-    font-size: 0.95rem;
+    padding: 0 .8rem;
+    letter-spacing: 0.5px;
+    font-size: .95rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .nav-link>a>i {
-    margin-left: 0.2rem;
+    margin-left: .2rem;
 }
 
 .nav-link:hover>a {
@@ -99,7 +181,7 @@ header {
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .dropdown ul {
@@ -110,11 +192,11 @@ header {
     display: flex;
     background-color: #fff;
     color: #3498db;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: .5rem 1rem;
+    font-size: .9rem;
     align-items: center;
     justify-content: space-between;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .dropdown-link:hover>a {
@@ -139,7 +221,7 @@ header {
     background-color: #fff;
     transform: rotate(45deg);
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
     z-index: -1;
 }
 
@@ -154,7 +236,7 @@ header {
 .dropdown.second {
     top: 0;
     left: 100%;
-    padding-left: 0.8rem;
+    padding-left: .8rem;
     cursor: pointer;
     transform: translateX(10px);
 }
@@ -193,18 +275,18 @@ header {
     background-color: #fff;
     position: relative;
     z-index: 1001;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .hamburger-menu div:before,
 .hamburger-menu div:after {
-    content: "";
+    content: '';
     position: absolute;
     width: inherit;
     height: inherit;
     background-color: #fff;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .hamburger-menu div:before {
@@ -218,9 +300,9 @@ header {
 #check {
     position: absolute;
     top: 50%;
-    right: 1.5rem;
+    right: 0;
     transform: translateY(-50%);
-    width: 2.5rem;
+    width: 2rem;
     height: 2.5rem;
     z-index: 90000;
     cursor: pointer;
@@ -258,10 +340,19 @@ header {
     #check {
         display: block;
     }
+    .login h2 {
+        font-size: .96rem;
+        position: absolute;
+        right: 15%;
+        top: 4rem;
+        width: 140px;
+        padding: .5rem;
+        line-height: 1.3rem;
+    }
     .nav-btn {
         position: fixed;
         /* height: calc(100vh - 3rem); */
-        top: 9.4rem;
+        top: 9.3rem;
         height: 100%;
         right: 0;
         width: 50%;
@@ -272,14 +363,14 @@ header {
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(100%);
-        transition: 0.65s;
+        transition: .65s;
     }
     #check:checked~.nav-btn {
         transform: translateX(0);
     }
     #check:checked~.nav-btn .nav-link,
     #check:checked~.nav-btn .log-sign {
-        animation: animation 0.5s ease forwards var(--i);
+        animation: animation .5s ease forwards var(--i);
     }
     .nav-links {
         flex: initial;
@@ -342,7 +433,7 @@ header {
         background-color: #69bde7;
         left: 10%;
         transform: scale(1.1) rotate(45deg);
-        transition: 0.5s;
+        transition: .5s;
     }
     .nav-link:hover .arrow {
         background-color: #50a9d6;
@@ -359,11 +450,19 @@ header {
     .nav-link>a>i {
         font-size: 1.1rem;
         transform: rotate(-90deg);
-        transition: 0.7s;
+        transition: .7s;
     }
     .dropdown i {
         font-size: 1rem;
-        transition: 0.7s;
+        transition: .7s;
+    }
+}
+
+@media(max-width: 620px) {
+    .login h2 {
+        top: 3.5rem;
+        width: 110px;
+        padding: .2rem;
     }
 }
 
@@ -371,10 +470,14 @@ header {
     .nav-btn {
         width: 65%;
     }
+    .login h2 {
+        top: 3.5rem;
+        width: 100px;
+        padding: .1rem;
+    }
 }
 
-
-/* -----------------------------------------------------------------Carousel---------------------------------------------------- */
+/*---------------------------------------------------carousel------------------------------------- */
 
 .mySlides {
     margin-top: 0;
@@ -504,7 +607,6 @@ header {
         top: 40%;
     }
 }
-
 @media only screen and (max-width: 1000px) {
     .prev,
     .next {
@@ -512,7 +614,6 @@ header {
         top: 35%;
     }
 }
-
 @media only screen and (min-width: 400px) {
     .prev,
     .next {
@@ -520,7 +621,6 @@ header {
         top: 40%;
     }
 }
-
 @media only screen and (max-width: 370px) {
     .prev,
     .next {
@@ -530,7 +630,7 @@ header {
 } */
 
 
-/*-----------------------------------------------------about us--------------------------------------------*/
+/* ---------------------------------------------------about us------------------------------------ */
 
 #aboutUs {
     background: rgb(226, 225, 224);
@@ -539,7 +639,7 @@ header {
 }
 
 .aboutus-image {
-    background: url(images/aboutus1.jpg) no-repeat center;
+    background: url("images/aboutus1.jpg") no-repeat center;
     background-size: cover;
     height: 35vh;
     background-attachment: fixed;
@@ -568,7 +668,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* padding:1em 0; */
+     padding:1em 0; 
 }
 
 .dflex {
@@ -597,9 +697,6 @@ header {
     /* #aboutUs{
         height: 100%;
     } */
-    .aboutus-overlay h1 {
-        font-size: 3rem;
-    }
     .dflex {
         margin-top: 2.5rem;
         padding: 0;
@@ -823,9 +920,9 @@ th {
 /*----------------------------------------------------------------Testimonials-----------------------------------*/
 
 .testimonials-title {
-    background: url(images/testimonials.jpeg) no-repeat center;
+   background: url(images/testimonials.jpeg) no-repeat center;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     height: 35vh;
     margin-bottom: 1rem;
 }

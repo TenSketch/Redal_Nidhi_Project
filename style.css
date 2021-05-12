@@ -382,7 +382,7 @@ header {
     vertical-align: middle;
     opacity: 60%;
     width: 100%;
-    height: 565px;
+    height: 700px;
 }
 
 .myslides h2 {
@@ -525,98 +525,204 @@ header {
 } */
 
 
-/* Products */
+/*--------------------------------------------------------- Products------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
 
 .all_products {
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-}
-
-.common_block {
-    background: #24183e;
-    width: 800px;
-    height: 300px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: white;
+    background: rgb(2, 2, 3);
+    width: 100%;
     display: block;
+}
+
+.banner_pro {
+    width: 100%;
+    background: url("images/ps.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+}
+
+.pro_overlay {
+    background: rgba(0, 0, 0, 0.527);
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 5px 5px rgb(216, 220, 238);
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
 }
 
-.savings_block {
+.pro_overlay h2 {
+    color: whitesmoke;
+    font-size: 5rem;
+}
+
+.banner_pro img {
+    height: 40vh;
+    width: 100%;
+}
+
+.ps {
+    display: block;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.savings {
+    /* background-color: darkblue; */
     display: flex;
-}
-
-.content_block {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.common_block h1 {
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    width: 100%;
 }
 
-.savings_block img {
+.pic {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img {
+    margin-left: 12rem;
+    padding: 0;
+    height: auto;
     width: 300px;
     height: 300px;
-    margin-top: 2rem;
-    margin-left: 13rem;
-    border-radius: 4px;
-}
-
-.box_block {
-    display: flex;
-}
-
-.image_block img {
-    width: 600px;
-    height: 300px;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    border-radius: 4px;
-}
-
-.deposit_block {
+    border: none;
+    border-radius: 50%;
     display: block;
-    margin-left: 10rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    position: relative;
 }
 
-.table_block {
-    width: 90%;
-    height: 60%;
-    margin-left: 2rem;
+.pic {
+    width: 50%;
 }
 
-tr {
-    margin-bottom: 10px;
+.pic img {
+    margin: auto;
 }
 
-td {
-    text-align: center;
-}
-
-.loans_block {
+.content {
     display: flex;
 }
 
-.loans_block img {
-    width: 500px;
-    height: 300px;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    border-radius: 4px;
+.tabular {
+    background: black;
+    color: white;
+    width: 50vw;
+    height: 100%;
+    text-align: center;
+    padding: auto;
+    position: relative;
+    font-size: 1rem;
 }
 
-.loan_data h2 {
-    font-weight: normal;
-    padding: 0.7rem;
-    margin: 0;
+td,
+th {
+    padding: 1rem;
+}
+
+.deposit {
+    display: flex;
+    width: 100%;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.block {
+    background: url("images/block.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.block h1 {
+    font-size: 2rem;
+}
+
+.block ul {
+    list-style-type: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.block ul li {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.block .pro_overlay {
+    background: rgba(44, 9, 245, 0.527);
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner_pro {
+        height: 30vh;
+    }
+    .all_products .ps {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    .pro_overlay h2 {
+        font-size: 2rem;
+    }
+    .savings {
+        display: table;
+        margin: 0;
+    }
+    .content {
+        width: 100%;
+    }
+    .tabular {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .pic {
+        display: table-header-group;
+    }
+    .pic img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 0%;
+    }
+    .deposit {
+        width: 100%;
+        display: block;
+    }
+    td,
+    th {
+        padding: 0.5rem;
+    }
+    .pro_overlay ul {
+        margin: 0;
+        padding: 0;
+    }
+    .pro_overlay ul li {
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 
@@ -1254,9 +1360,6 @@ textarea::placeholder {
         margin: auto;
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-    table {
         padding-bottom: 2rem;
     }
     th,

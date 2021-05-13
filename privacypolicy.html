@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel = "stylesheet" href="style.css">
 </head>
 <body>
@@ -77,13 +78,13 @@
 
   <!---------------------------------------------Privacy Policy------------------------------------------------>
 
-   <section id="privacypolicy">
+   <section id="privacypolicy"  data-aos="fade-right">
         <div class="privacy-title">
             <div class="privacy-overlay">
                 <h2>privacy policy</h2>
             </div>
         </div>
-        <div class="privacy-content">
+        <div class="privacy-content"  data-aos="fade-right">
             <div class="privacy-container">
                 <ul>
                     <li>
@@ -169,18 +170,18 @@
 
     <!----------------------------------------------------Footer---------------------------------------------->
 
- <footer id="contact">
+   <footer id="contact" data-aos="fade-right">
         <div class="contact-section">
             <div class="contact-overlay">
                 <div class="contact-container">
-                    <div class="contact-links">
+                    <div class="contact-links" data-aos="fade-left">
                         <h2>Links</h2>
-                        <ul>
+                        <ul  data-aos="fade-right">
                             <li><a href="terms&conditions.html">Terms & Conditions</a></li>
                             <li><a href="privacypolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div class="contact-address">
+                    <div class="contact-address" data-aos="fade-right">
                         <h2>Contact Us</h2>
                         <div class="contact-address-top">
                             <div class="contact-icon1">
@@ -195,7 +196,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="contact-address-bottom">
+                        <div class="contact-address-bottom" data-aos="fade-left">
                             <div class="contact-icon2">
                                 <a href="#">
                                     <img src="images/placeholder.png" alt="location">
@@ -218,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-items">
+                    <div class="contact-items" data-aos="fade-right">
                         <!-- <h2>Contact Us</h2> -->
                         <p>Drop in your details. Will get back to you</p>
                         <div class="contact-container1">
@@ -241,6 +242,15 @@
             Copyright &copy; 2017-2021 Nidhi Limited
         </div>
     </footer>
+
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration:500
+    });
+  </script>
 
 </body>
 </html>

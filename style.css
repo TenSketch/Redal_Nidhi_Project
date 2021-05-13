@@ -477,6 +477,7 @@ header {
     }
 }
 
+
 /*---------------------------------------------------carousel------------------------------------- */
 
 .mySlides {
@@ -634,7 +635,7 @@ header {
 
 #aboutUs {
     background: rgb(226, 225, 224);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* background-color: aqua; */
 }
 
@@ -668,7 +669,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-     padding:1em 0; 
+    padding: 1em 0;
 }
 
 .dflex {
@@ -920,7 +921,7 @@ th {
 /*----------------------------------------------------------------Testimonials-----------------------------------*/
 
 .testimonials-title {
-   background: url(images/testimonials.jpeg) no-repeat center;
+    background: url(images/testimonials.jpeg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 35vh;
@@ -1006,7 +1007,7 @@ th {
 /* --------------------------------------------------------Privacy Policy begins------------------------------- */
 
 #privacypolicy {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 .privacy-title {
@@ -1027,6 +1028,7 @@ th {
 .privacy-overlay h2 {
     color: whitesmoke;
     font-size: 2.3rem;
+    text-align: center;
 }
 
 .privacy-container {
@@ -1141,9 +1143,10 @@ th {
 
 /* ---------------------------------------------- Terms and Conditions Begins --------------------------------------------------- */
 
-#tandc {
+
+/* #tandc {
     font-family: Georgia, "Times New Roman", Times, serif;
-}
+} */
 
 .tandc-title {
     background: url(images/tandc.jpg) no-repeat center;

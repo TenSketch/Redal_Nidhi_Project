@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     /* overflow: auto; */
 }
 
@@ -86,10 +86,10 @@ header {
     color: #3a91bd;
     border: 1px solid #3a91bd;
     border-radius: 10px;
-    padding: .2rem;
+    padding: 0.2rem;
     text-align: center;
     animation: moveleft 1s linear 1;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -156,17 +156,17 @@ header {
 .nav-link>a {
     line-height: 3rem;
     color: #fff;
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
     letter-spacing: 0.5px;
-    font-size: .95rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .nav-link>a>i {
-    margin-left: .2rem;
+    margin-left: 0.2rem;
 }
 
 .nav-link:hover>a {
@@ -181,7 +181,7 @@ header {
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .dropdown ul {
@@ -192,11 +192,11 @@ header {
     display: flex;
     background-color: #fff;
     color: #3498db;
-    padding: .5rem 1rem;
-    font-size: .9rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
     align-items: center;
     justify-content: space-between;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .dropdown-link:hover>a {
@@ -221,7 +221,7 @@ header {
     background-color: #fff;
     transform: rotate(45deg);
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     z-index: -1;
 }
 
@@ -236,7 +236,7 @@ header {
 .dropdown.second {
     top: 0;
     left: 100%;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
     cursor: pointer;
     transform: translateX(10px);
 }
@@ -275,18 +275,18 @@ header {
     background-color: #fff;
     position: relative;
     z-index: 1001;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .hamburger-menu div:before,
 .hamburger-menu div:after {
-    content: '';
+    content: "";
     position: absolute;
     width: inherit;
     height: inherit;
     background-color: #fff;
     border-radius: 3px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .hamburger-menu div:before {
@@ -341,12 +341,12 @@ header {
         display: block;
     }
     .login h2 {
-        font-size: .96rem;
+        font-size: 0.96rem;
         position: absolute;
         right: 15%;
         top: 4rem;
         width: 140px;
-        padding: .5rem;
+        padding: 0.5rem;
         line-height: 1.3rem;
     }
     .nav-btn {
@@ -363,14 +363,14 @@ header {
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(100%);
-        transition: .65s;
+        transition: 0.65s;
     }
     #check:checked~.nav-btn {
         transform: translateX(0);
     }
     #check:checked~.nav-btn .nav-link,
     #check:checked~.nav-btn .log-sign {
-        animation: animation .5s ease forwards var(--i);
+        animation: animation 0.5s ease forwards var(--i);
     }
     .nav-links {
         flex: initial;
@@ -433,7 +433,7 @@ header {
         background-color: #69bde7;
         left: 10%;
         transform: scale(1.1) rotate(45deg);
-        transition: .5s;
+        transition: 0.5s;
     }
     .nav-link:hover .arrow {
         background-color: #50a9d6;
@@ -450,19 +450,19 @@ header {
     .nav-link>a>i {
         font-size: 1.1rem;
         transform: rotate(-90deg);
-        transition: .7s;
+        transition: 0.7s;
     }
     .dropdown i {
         font-size: 1rem;
-        transition: .7s;
+        transition: 0.7s;
     }
 }
 
-@media(max-width: 620px) {
+@media (max-width: 620px) {
     .login h2 {
         top: 3.5rem;
         width: 110px;
-        padding: .2rem;
+        padding: 0.2rem;
     }
 }
 
@@ -473,7 +473,7 @@ header {
     .login h2 {
         top: 3.5rem;
         width: 100px;
-        padding: .1rem;
+        padding: 0.1rem;
     }
 }
 
@@ -631,31 +631,29 @@ header {
 } */
 
 
-/* ---------------------------------------------------about us------------------------------------ */
+/***************************************************About Us****************************************/
 
 #aboutUs {
     background: rgb(226, 225, 224);
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* background-color: aqua; */
 }
 
 .aboutus-image {
     background: url("images/aboutus1.jpg") no-repeat center;
     background-size: cover;
-    height: 35vh;
     background-attachment: fixed;
+    height: 20vh;
 }
 
 .aboutus-overlay {
-    background: rgba(0, 0, 0, 0.288);
+    background: rgba(0, 0, 0, 0.322);
     height: 100%;
 }
 
 .aboutus-overlay h1 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 3rem;
-    padding-top: 5rem;
+    padding-top: 9rem;
 }
 
 .aboutus-container {
@@ -669,7 +667,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 1em 0;
+    /* padding:1em 0; */
 }
 
 .dflex {
@@ -686,18 +684,54 @@ header {
     height: 160px;
 }
 
-.d-text {
-    padding: .5rem;
+.d-text-top,
+.d-text-bottom {
+    padding: 0.5rem;
 }
 
-.d-text h2 {
-    padding-bottom: .5rem;
+.d-text-top h2 {
+    font-size: 2em;
+    padding-bottom: 0.5rem;
+}
+
+.d-text-top h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.d-text-top ul li {
+    list-style: inside;
+    line-height: 1.4rem;
+}
+
+.d-text-bottom h2 {
+    /* font-size: 3.5em; */
+    padding-bottom: 0.5rem;
+}
+
+.company-details,
+th,
+td {
+    font-size: 0.9em;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    border: 1px dotted black;
+    padding: 0.5em;
+}
+
+@media (min-width: 600px) {
+    .aboutus-image {
+        height: 30vh;
+    }
 }
 
 @media (min-width: 768px) {
     /* #aboutUs{
         height: 100%;
     } */
+    .aboutus-image {
+        height: 45vh;
+    }
     .dflex {
         margin-top: 2.5rem;
         padding: 0;
@@ -708,21 +742,41 @@ header {
     .d-image img {
         height: 185px;
     }
-    .aboutus-bottom {
+    /* .aboutus-bottom{
         padding: 1.5rem 0;
+    } */
+    .d-text-top h2 {
+        font-size: 3em;
+        /* padding-bottom: .5rem; */
+    }
+    .d-text-top h3 {
+        font-size: 2rem;
+        /* padding: 1rem 0; */
+    }
+    .d-text-top ul li {
+        font-size: 1.1em;
+    }
+    .company-details span {
+        font-size: 1.25rem;
+    }
+    .company-details span:hover {
+        text-decoration: underline;
+    }
+    .company-details {
+        width: 70%;
+    }
+    .company-details,
+    th,
+    td {
+        margin: 0 auto;
+        line-height: 1em;
+        padding: 1em;
+        font-size: 1em;
     }
 }
 
 
 /*--------------------------------------------------------- Products------------------------------- */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-body {
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    font-family: "Poppins", sans-serif;
-}
 
 .all_products {
     background: rgb(2, 2, 3);
@@ -730,12 +784,16 @@ body {
     display: block;
 }
 
+.all_products h1 {
+    font-size: 3rem;
+}
+
 .banner_pro {
     width: 100%;
     background: url("images/ps.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 30vh;
+    height: 50vh;
 }
 
 .pro_overlay {
@@ -751,25 +809,22 @@ body {
 
 .pro_overlay h2 {
     color: whitesmoke;
-    font-size: 5rem;
-    text-align: center;
+    font-size: 4rem;
 }
 
-.banner_pro img {
-    height: 40vh;
-    width: 100%;
-}
 
-.ps {
+/* .ps {
     display: block;
     width: 100%;
     height: 800px;
     position: relative;
-}
+} */
 
-.savings {
+#savings {
     /* background-color: darkblue; */
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     margin-top: 1rem;
     width: 100%;
 }
@@ -783,21 +838,15 @@ body {
 .pic img {
     margin-left: 12rem;
     padding: 0;
+    margin: auto;
     height: auto;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    /* width: 300px;
+    height: 300px; */
     border: none;
     border-radius: 50%;
     display: block;
     position: relative;
-}
-
-.pic {
-    width: 50%;
-}
-
-.pic img {
-    margin: auto;
 }
 
 .content {
@@ -815,20 +864,19 @@ body {
     font-size: 1rem;
 }
 
-td,
-th {
+.tabular td th {
     padding: 1rem;
 }
 
-.deposit {
+#deposit {
     display: flex;
     width: 100%;
     float: right;
     margin-bottom: 1rem;
 }
 
-.block {
-    background: url("images/block.jpg") no-repeat;
+#loans {
+    /* background: url("images/block.jpg") no-repeat; */
     background-size: cover;
     width: 100%;
     color: white;
@@ -838,24 +886,24 @@ th {
     padding: 0;
 }
 
-.block h1 {
-    font-size: 2rem;
+#loans h1 {
+    font-size: 3rem;
 }
 
-.block ul {
+#loans ul {
     list-style-type: none;
     font-weight: bolder;
     color: white;
 }
 
-.block ul li {
-    margin: 2rem;
+#loans ul li {
+    /* margin: 2rem; */
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-.block .pro_overlay {
-    background: rgba(44, 9, 245, 0.527);
+#loans .pro_overlay {
+    /* background: rgba(44, 9, 245, 0.527); */
     height: 100%;
     display: block;
     align-items: center;
@@ -864,9 +912,54 @@ th {
     font-weight: bold;
 }
 
+.loan-images {
+    width: min(991px, 80%);
+    margin: 0 auto;
+    /* width: 80%; */
+}
+
+.loan-content img {
+    height: 300px;
+    margin: 1rem;
+    /* border-radius: 50%; */
+}
+
+.loan-img-bdr img {
+    height: 250px;
+    border: 1.5px solid white;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.loan-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loan-images h2 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+@media (max-width: 1050px) {
+    .loan-images img {
+        height: 200px;
+    }
+    .loan-img-bdr img {
+        height: 160px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .banner_pro {
-        height: 30vh;
+        height: 25vh;
+    }
+    .all_products h1 {
+        font-size: 2rem;
+    }
+    #loans h1 {
+        font-size: 2rem;
     }
     .all_products .ps {
         display: block;
@@ -874,11 +967,9 @@ th {
         height: 100vh;
     }
     .pro_overlay h2 {
-        font-size: 2rem;
-        text-align: center;
-        margin: 2rem;
+        font-size: 2.5rem;
     }
-    .savings {
+    #savings {
         display: table;
         margin: 0;
     }
@@ -898,12 +989,11 @@ th {
         width: 100%;
         border-radius: 0%;
     }
-    .deposit {
+    #deposit {
         width: 100%;
         display: block;
     }
-    td,
-    th {
+    .tabular td th {
         padding: 0.5rem;
     }
     .pro_overlay ul {
@@ -915,10 +1005,17 @@ th {
         text-align: center;
         margin: auto;
     }
+    .loan-content {
+        flex-direction: column;
+    }
+    .loan-images h2 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
 }
 
 
-/*----------------------------------------------------------------Testimonials-----------------------------------*/
+/* ----------------------------------------------------------Testimonials---------------------------- */
 
 .testimonials-title {
     background: url(images/testimonials.jpeg) no-repeat center;
@@ -976,7 +1073,7 @@ th {
     color: black;
     border-radius: 5px;
     padding: .6rem;
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: left;
 }
 
@@ -1000,6 +1097,9 @@ th {
         justify-content: center;
         padding: 1rem;
         /* justify-content: space-between; */
+    }
+    .testimonial-texts p {
+        font-size: .9rem;
     }
 }
 

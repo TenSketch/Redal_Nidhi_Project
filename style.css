@@ -647,13 +647,16 @@ header {
 .aboutus-overlay {
     background: rgba(0, 0, 0, 0.322);
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutus-overlay h1 {
     text-align: center;
     color: black;
     font-size: 3rem;
-    padding-top: 9rem;
+    /* padding-top: 9rem; */
 }
 
 .aboutus-container {
@@ -695,7 +698,7 @@ header {
 }
 
 .d-text-top h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem 0;
 }
 
@@ -705,33 +708,35 @@ header {
 }
 
 .d-text-bottom h2 {
-    /* font-size: 3.5em; */
+    font-size: 3.5em;
     padding-bottom: 0.5rem;
+}
+
+.company-details {
+    width: 100%;
+    margin: auto;
 }
 
 .company-details,
 th,
 td {
-    font-size: 0.9em;
+    font-size: 0.7rem;
     /* border: 1px solid black; */
     border-collapse: collapse;
+    /* padding: 1rem 0.5rem; */
     border: 1px dotted black;
-    padding: 0.5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 300px) {
     .aboutus-image {
         height: 30vh;
+    }
+    .aboutus-overlay h1 {
+        padding: 2.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    /* #aboutUs{
-        height: 100%;
-    } */
-    .aboutus-image {
-        height: 45vh;
-    }
     .dflex {
         margin-top: 2.5rem;
         padding: 0;
@@ -747,11 +752,6 @@ td {
     } */
     .d-text-top h2 {
         font-size: 3em;
-        /* padding-bottom: .5rem; */
-    }
-    .d-text-top h3 {
-        font-size: 2rem;
-        /* padding: 1rem 0; */
     }
     .d-text-top ul li {
         font-size: 1.1em;
@@ -763,14 +763,14 @@ td {
         text-decoration: underline;
     }
     .company-details {
-        width: 70%;
+        width: 100%;
     }
     .company-details,
     th,
     td {
         margin: 0 auto;
         line-height: 1em;
-        padding: 1em;
+        /* padding: 1em; */
         font-size: 1em;
     }
 }
@@ -857,15 +857,16 @@ td {
     background: black;
     color: white;
     width: 50vw;
-    height: 100%;
     text-align: center;
-    padding: auto;
+    padding: 1rem 1rem;
     position: relative;
     font-size: 1rem;
 }
 
-.tabular td th {
-    padding: 1rem;
+.tabular,
+td,
+th {
+    padding: 1rem 0;
 }
 
 #deposit {
@@ -956,7 +957,7 @@ td {
         height: 25vh;
     }
     .all_products h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     #loans h1 {
         font-size: 2rem;
@@ -967,7 +968,7 @@ td {
         height: 100vh;
     }
     .pro_overlay h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     #savings {
         display: table;
@@ -1672,7 +1673,7 @@ textarea::placeholder {
         border-radius: 0;
         height: 220px;
     }
-    .table_block {
+    /* .table_block {
         width: 100%;
         margin: auto;
         padding-left: 2rem;
@@ -1682,7 +1683,7 @@ textarea::placeholder {
     th,
     td {
         border: 2px solid rgb(163, 118, 236);
-    }
+    } */
     .box_block {
         display: block;
         font-size: 0.8rem;

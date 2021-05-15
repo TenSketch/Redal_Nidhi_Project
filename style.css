@@ -621,14 +621,15 @@ header {
         position: absolute;
         top: 40%;
     }
-}
+}*/
+
 @media only screen and (max-width: 370px) {
-    .prev,
-    .next {
-        position: absolute;
-        top: 40%;
+    .text-spacing {
+        width: 25ch;
+        text-align: center;
+        margin: auto;
     }
-} */
+}
 
 
 /***************************************************About Us****************************************/

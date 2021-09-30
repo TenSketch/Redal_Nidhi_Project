@@ -1321,10 +1321,8 @@ th {
 
 /* -----------------------------------------------Footer Begins --------------------------------------------------------------- */
 
-.contact-section {
-    background: url("images/contact1.jpg") no-repeat center;
-    color: cornsilk !important;
-    background-size: cover;
+#contact {
+    background: #24183e;
     height: 100%;
 }
 
@@ -1500,10 +1498,7 @@ textarea::placeholder {
 }
 
 @media (min-width: 769px) {
-    .contact-section {
-        background: url("images/contact.jpg") no-repeat center;
-        background-size: cover;
-    }
+   
     .contact-container {
         display: flex;
         /* flex-direction: row; */

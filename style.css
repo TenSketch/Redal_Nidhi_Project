@@ -1493,7 +1493,7 @@ textarea::placeholder {
 }
 
 .copyright {
-    background: #c95937;
+    background: transparent;
     color: whitesmoke;
     text-align: center;
     padding: 0;
